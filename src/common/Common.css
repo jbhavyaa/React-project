@@ -1,0 +1,88 @@
+.signup, .Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    flex-direction: row;
+   
+}
+
+.SignupForm, .LoginForm {
+    display: flex;
+    flex-direction: column;
+    background-color: #2541B2;
+    width: 40%;
+    max-width: 500px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+}
+
+.SignupForm h1, .LoginForm h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.SignupForm label, .LoginForm label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.SignupForm input, .LoginForm input {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.SignupForm button, .LoginForm button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.SignupForm button:hover, .LoginForm button:hover {
+    background-color: #555;
+}
+
+.toggle {
+    display: flex;
+    width: 40%;
+    margin-top: 20px;
+    flex-direction: column;
+    background-color:aliceblue;
+    border:1px solid #2541B2;
+    height: 200px;
+    padding-top: 80px;
+}
+#left-panel{
+    border-radius: 10px 0px 0px 10px;
+}
+#right-panel{
+    border-radius: 0px 10px 10px 0px;
+}
+
+.toggle h4 {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.toggle button {
+    margin: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle button:hover {
+    background-color: #555;
+}
