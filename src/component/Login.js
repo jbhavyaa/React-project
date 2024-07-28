@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../common/Common.css';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 export const Login = () => {
     const navigate = useNavigate();
@@ -11,7 +11,12 @@ export const Login = () => {
         navigate('/signup');
     };
 
-    const notify = () => toast("Form Submitted");   
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate('/Dashboard');
+      };
+
+    // const notify = () => toast("Form Submitted");   
 
     return (
         <div className="Login">
@@ -19,15 +24,15 @@ export const Login = () => {
                 <h4>Create a New Account</h4>
                 <button type="button" onClick={handleSignupNavigation}>Go to Signup</button>
             </div>
-            <form className="LoginForm">
+            <form className="LoginForm" onSubmit={handleSubmit}>
                 <h1>LOGIN FORM</h1>
                 <label>Email</label>
-                <input type="email" />
+                <input type="email"  required/>
                 <br />
                 <label>Password</label>
-                <input type="password" />
+                <input type="password" required />
                 <br />
-                <button type="submit" onClick={notify}>Submit</button>
+                <button type="submit">Submit</button>
             </form>    
         </div>
     );

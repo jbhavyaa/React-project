@@ -18,13 +18,13 @@ export const Signup = () => {
             <form className="SignupForm">
                 <h1>SIGNUP FORM</h1>
                 <label>First Name</label>
-                <input type="text" />
+                <input type="text"required />
                 <label>Last Name</label>
-                <input type="text" />
+                <input type="text" required  />
                 <label>Email</label>
-                <input type="email" />
+                <input type="email" required />
                 <label>Password</label>
-                <input type="password" />
+                <input type="password" required  />
                 <button type="submit" onClick={notify}>Submit</button>
                 <ToastContainer />
             </form>
