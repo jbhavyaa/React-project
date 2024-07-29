@@ -5,17 +5,8 @@
     background-color: #333;
     padding: 1rem;
     color: white;
+    height: 70px;
   }
-
-  .h1{
-    background-color: #333;
-    color:white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-left: 30px;
-    font-size: larger;
-
-  }
-  
 
   .navbar-brand {
     font-size: 1.5rem;
@@ -23,7 +14,8 @@
   
   .navbar-right {
     display: flex;
-    align-items: center;
+    align-items: left;
+    margin-left: 600px;
   }
   
   .navbar-right input[type="text"] {

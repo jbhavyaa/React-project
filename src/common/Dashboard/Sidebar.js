@@ -6,7 +6,8 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       
-      
+        <div className='h1'><h1> Reactify</h1></div>
+        <br></br>
         <Link to="/dashboard">Home</Link>
         <Link to="/dashboard/profile">Profile</Link>
         <Link to="/dashboard/settings">Settings</Link>

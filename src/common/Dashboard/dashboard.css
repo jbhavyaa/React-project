@@ -1,19 +1,32 @@
-.dashboard {
-    margin-left: 250px; /* Same width as the sidebar */
-    padding: 20px;
-  }
-  
-  .dashboard-content {
+.dashboard-conatiner{
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: row;
   }
   
-  .card {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 30%;
-    min-width: 200px;
-  }
+ .Sidebar-content{
+  flex: 5;
+}
+
+.main-content{
+  flex: 5;
+  margin-left: 200px;
+} 
+
+table {
+  margin: 50px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  
+  

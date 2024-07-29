@@ -4,7 +4,6 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className='h1'><h1> Reactify</h1></div>
       <div className="navbar-right">
         <input type="text" placeholder="Search..." />
         <div className="navbar-buttons">
